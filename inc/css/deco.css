@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    background: grey;
 }
 
 body {
@@ -75,6 +76,36 @@ header nav ul li a {
     margin-left: 260px;
 }
 
+.parole {
+    width: 420px;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    border: 2px solid white;
+}
+
+.parole h1 {
+    font-size: 44px;
+    font-weight: bold;
+    color: white;
+    padding: 0;
+    border-bottom: 2px solid white;
+}
+
+.parole h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.parole img {
+    width: 150px;
+    height: 200px;
+    /*transform: rotate(20deg);*/
+}
+
 .loginbox {
     width: 320px;
     height: auto;
@@ -82,8 +113,8 @@ header nav ul li a {
     color: white;
     padding: 0px 20px 40px 20px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    left: 75%;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
 }

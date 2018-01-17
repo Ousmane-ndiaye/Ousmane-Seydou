@@ -40,50 +40,6 @@
                     </div>
                 </nav>
             </header>
-            <div class="main">
-                <div class="loginbox">
-                    <div class="avatar">
-                        <i class="fa fa-user fa-5x" aria-hidden="true"></i>
-                    </div>
-                    <h1>Se connecter</h1>
-                    <form action="#" method="post" id="formConnect">
-                        <div class="alert alert-danger" id="alertC" role="alert">
-                            <ul>
-                            </ul>
-                        </div>
-                        <p>Nom d'utilisateur</p>
-                        <input type="text" name="loginC" id="loginC" nomChamp="login" placeholder="Votre nom d'utilisateur">
-                        <p>Mot de passe</p>
-                        <input type="password" name="pswdC" id="pswdC" nomChamp="password" placeholder="Votre mot de passe">
-                        <input type="submit" name="connecterC" id="connecterC" value="Se connecter">
-                        <a href="#">Mot de passe oubliée ?</a><br/>
-                        <a href="#">Inscivez vous ici</a>
-                    </form>
-                </div>
-                <div class="inscriptbox">
-                    <div class="avatar">
-                        <i class="fa fa-user fa-5x" aria-hidden="true"></i>
-                    </div>
-                    <h1>Se connecter</h1>
-                    <form action="#" method="post" id="formInscript">
-                        <div class="alert alert-danger" id="alertI" role="alert">
-                            <ul>
-                            </ul>
-                        </div>
-                        <p>Votre nom et nom</p>
-                        <input type="text" name="nomI" id="nomI" nomChamp="prenom et nom" placeholder="Votre prenom et nom ">
-                        <p>Mot de passe</p>
-                        <input type="password" name="pswdI" id="pswdI" nomChamp="password" placeholder="Votre mot de passe">
-                        <p>Nom d'utilisateur</p>
-                        <input type="text" name="loginI" id="loginI" nomChamp="login" placeholder="Votre nom d'utilisateur">
-                        <p>Mot de passe</p>
-                        <input type="password" name="pswdI" id="pswdI" nomChamp="password" placeholder="Votre mot de passe">
-                        <input type="submit" name="connecterC" id="connecterC" value="Se connecter">
-                        <a href="#">Mot de passe oubliée ?</a><br/>
-                        <a href="#">Inscivez vous ici</a>
-                    </form>
-                </div>
-            </div>
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
