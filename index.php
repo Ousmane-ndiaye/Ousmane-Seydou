@@ -9,7 +9,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="inc/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" href="inc/css/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="inc/css/deco.css" style="text/css">
+        <link rel="stylesheet" href="inc/css/decos.css" style="text/css">
     </head>
     <body>
         <div class="contenu">
@@ -34,36 +34,31 @@
                 </nav>
             </header>
             <div class="main">
-                <p>
-                    Git trouve implicitement que c'est un renommage, donc cela importe peu si vous renommez un fichier de cette manière ou avec la commande mv.
-                    La seule différence réelle est que mv ne fait qu'une commande à taper au lieu de trois — c'est une commande de convenance.
-                    Le point principal est que vous pouvez utiliser n'importe quel outil pour renommer un fichier, et traiter les commandes add/rm plus tard, avant de valider la modification.
-                    Git trouve implicitement que c'est un renommage, donc cela importe peu si vous renommez un fichier de cette manière ou avec la commande mv.
-                    La seule différence réelle est que mv ne fait qu'une commande à taper au lieu de trois — c'est une commande de convenance.
-                    Le point principal est que vous pouvez utiliser n'importe quel outil pour renommer un fichier, et traiter les commandes add/rm plus tard, avant de valider la modification.
-                </p>
-                <p>
-                    Git trouve implicitement que c'est un renommage, donc cela importe peu si vous renommez un fichier de cette manière ou avec la commande mv.
-                    La seule différence réelle est que mv ne fait qu'une commande à taper au lieu de trois — c'est une commande de convenance.
-                    Le point principal est que vous pouvez utiliser n'importe quel outil pour renommer un fichier, et traiter les commandes add/rm plus tard, avant de valider la modification.
-                    Git trouve implicitement que c'est un renommage, donc cela importe peu si vous renommez un fichier de cette manière ou avec la commande mv.
-                    La seule différence réelle est que mv ne fait qu'une commande à taper au lieu de trois — c'est une commande de convenance.
-                    Le point principal est que vous pouvez utiliser n'importe quel outil pour renommer un fichier, et traiter les commandes add/rm plus tard, avant de valider la modification.
-                </p>
-                <p>
-                    Git trouve implicitement que c'est un renommage, donc cela importe peu si vous renommez un fichier de cette manière ou avec la commande mv.
-                    La seule différence réelle est que mv ne fait qu'une commande à taper au lieu de trois — c'est une commande de convenance.
-                    Le point principal est que vous pouvez utiliser n'importe quel outil pour renommer un fichier, et traiter les commandes add/rm plus tard, avant de valider la modification.
-                    Git trouve implicitement que c'est un renommage, donc cela importe peu si vous renommez un fichier de cette manière ou avec la commande mv.
-                    La seule différence réelle est que mv ne fait qu'une commande à taper au lieu de trois — c'est une commande de convenance.
-                    Le point principal est que vous pouvez utiliser n'importe quel outil pour renommer un fichier, et traiter les commandes add/rm plus tard, avant de valider la modification.
-                </p>
+                <div class="loginbox">
+                    <div class="avatar">
+                        <i class="fa fa-user fa-5x" aria-hidden="true"></i>
+                    </div>
+                    <h1>Se connecter</h1>
+                    <form action="#" method="post" id="formConnect">
+                        <div class="alert alert-danger" id="alertC" role="alert">
+                            <ul>
+                            </ul>
+                        </div>
+                        <p>Nom d'utilisateur</p>
+                        <input type="text" name="loginC" id="loginC" nomChamp="login" placeholder="Votre nom d'utilisateur">
+                        <p>Mot de passe</p>
+                        <input type="password" name="pswdC" id="pswdC" nomChamp="password" placeholder="Votre mot de passe">
+                        <input type="submit" name="connecterC" id="connecterC" value="Se connecter">
+                        <a href="#">Mot de passe oubliée ?</a><br/>
+                        <a href="#">Inscivez vous ici</a>
+                    </form>
+                </div>
             </div>
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="inc/js/dynamiq.js"></script>
+        <script src="inc/js/dynamiqs.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     </body>
