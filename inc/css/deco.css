@@ -80,6 +80,7 @@ header nav ul li a {
     height: auto;
     background: rgba(0, 0, 0, 0.7);
     color: white;
+    padding: 0px 20px 40px 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -93,7 +94,64 @@ header nav ul li a {
     color: white;
     background: red;
     border-radius: 50%;
-    margin-left: 34%;
+    margin-left: 32%;
     margin-top: -15%;
     text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.loginbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input[type=text],
+input[type=password] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 22px;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.loginbox a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(61, 169, 169);
+    font-weight: bold;
+}
+
+.loginbox a:hover {
+    color: white;
+    text-decoration: underline;
 }
