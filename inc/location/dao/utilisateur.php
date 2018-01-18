@@ -4,7 +4,6 @@ namespace location\dao;
     use \PDO;
     class Utilisateur
     {
-        var $numCNI;
         var $nomComplet;
         var $login;
         var $password;

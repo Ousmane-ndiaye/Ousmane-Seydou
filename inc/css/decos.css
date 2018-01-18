@@ -130,16 +130,31 @@ header nav ul li a {
     left: 0;
 }
 
-.close {
-    color: white;
+.closeI,
+.closeR {
+    color: black;
 }
 
-.close:hover {
-    color: white;
+.closeI:hover,
+.closeI:hover {
+    color: black;
     cursor: pointer;
 }
 
 .inscriptbox {
+    width: 500px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 0px 20px 40px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.recupbox {
     width: 500px;
     height: auto;
     background: rgba(0, 0, 0, 0.9);
@@ -171,7 +186,8 @@ h1 {
 }
 
 .loginbox p,
-.inscriptbox p {
+.inscriptbox p,
+.recupbox p {
     margin: 0;
     padding: 0;
     font-weight: bold;
@@ -179,10 +195,13 @@ h1 {
 
 .loginbox input,
 .inscriptbox input,
+.recupbox input,
 .loginbox select,
 .inscriptbox select,
+.recupbox select,
 .loginbox select option,
-.inscriptbox select option {
+.inscriptbox select option,
+.recupbox select option {
     width: 100%;
     margin-bottom: 20px;
 }
@@ -223,7 +242,8 @@ input[type=submit]:hover {
 }
 
 .loginbox a,
-.inscriptbox a {
+.inscriptbox a,
+.recupbox a {
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
@@ -232,7 +252,8 @@ input[type=submit]:hover {
 }
 
 .loginbox a:hover,
-.inscriptbox a:hover {
+.inscriptbox a:hover,
+.recupbox a:hover {
     color: white;
     text-decoration: underline;
 }

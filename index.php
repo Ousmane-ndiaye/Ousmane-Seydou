@@ -65,7 +65,7 @@ session_start();
                             <li><a href="#">Contact</a></li>
                             <li>
                                 <div class="menu-icon">
-                                    <i class="fa fa-bars fa-2x"></i>
+                                    &nbsp;
                                 </div>
                             </li>
                         </ul>
@@ -135,7 +135,6 @@ session_start();
                             <option value="Administrateur">Administrateur</option>
                         </select>
                         <input type="submit" name="connecterC" id="connecterC" value="Se connecter">
-                        <a href="#" class="openR">Mot de passe oublié ?</a><br/>
                         <a href="#" class="openI">Inscivez vous ici</a>
                     </form>
                 </div>
@@ -164,10 +163,9 @@ session_start();
                             <option value="Administrateur">Administrateur</option>
                         </select>
                         <input type="submit" name="enregistrerI" id="enregistrerI" value="S'inscrire">
-                        <a href="#" class="openR">Mot de passe oublié ?</a><br/>
                     </form>
                 </div>
-                <div class="popupR">
+                <!--<div class="popupR">
                     <div class="recupbox">
                     <div>
                         <button class="closeR">X</button>
@@ -190,15 +188,14 @@ session_start();
                             <option value="Administrateur">Administrateur</option>
                         </select>
                         <input type="submit" name="recupererC" id="recupererC" value="Récuperer">
-                        <a href="#" class="openI">Inscivez vous ici</a>
                     </form>
-                </div>
+                </div>-->
             </div>
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="inc/js/jquery-3.2.1.min.js"></script>
-        <script src="inc/js/dynamiques.js"></script>
+        <script src="inc/js/dynamiq.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="inc/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     </body>
