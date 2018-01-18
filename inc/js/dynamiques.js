@@ -1,5 +1,5 @@
 $(function() {
-    $("#alertI, #alertC").hide();
+    $("#alertI, #alertC, #infoI").hide();
     $(".menu-icon").on("click", function() {
         alert("apres tu comprendras");
     });
@@ -11,12 +11,19 @@ $(function() {
             $("header nav").removeClass("black");
         }
     });
-    $(".open").on("click", function() {
-        $(".popup").fadeIn("slow");
+    $(".openI").on("click", function() {
+        $(".popupI").fadeIn("slow");
         return false;
     });
-    $(".close").on("click", function() {
-        $(".popup").fadeOut("slow");
+    $(".closeI").on("click", function() {
+        $(".popupI").fadeOut("slow");
+    });
+    $(".openR").on("click", function() {
+        $(".popupR").fadeIn("slow");
+        return false;
+    });
+    $(".closeR").on("click", function() {
+        $(".popupR").fadeOut("slow");
     });
 
     function champObl(champs) {
@@ -24,7 +31,7 @@ $(function() {
             return "Veuillez remplir le champ " + champs.attr('nomChamp');
         } else if (champs.attr('nomChamp') == "login" && !champs.val().match(/^[a-zA-Z0-9]+$/i)) {
             return "Veillez rentrer un login valide";
-        } else if (champs.attr('nomChamp') == "prenom et nom" && !champs.val().match(/^[a-zA-Z]+{2,} [a-zA-Z]+{2,} [a-zA-Z]+{2,} [a-zA-Z]+$/i)) {
+        } else if (champs.attr('nomChamp') == "prenom et nom" && !champs.val().match(/^[a-z A-Z]+$/i)) {
             return "Veillez remplir votre prenom et nom correctement";
         } else {
             return "";
@@ -53,8 +60,10 @@ $(function() {
                 });
                 if (controle == 4 && idform == "formInscript") {
                     valid = true;
+                    $('#infoI').show();
                 } else if (controle == 3 && idform == "formConnect") {
                     valid = true;
+                    ('#infoI').hide();
                 } else {
                     valid = false;
                 }
