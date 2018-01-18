@@ -97,11 +97,11 @@ session_start();
                                     }
                                     elseif($donnee["profil"] == "Gerant" && $donnee["etat"] == '-1')
                                     {
-                                        echo "<p style='font-size: 12px; coloor: red;'>".$donnee["nomComplet"]." votre compte a été désactiver ! </p>";
+                                        echo "<p style='font-size: 12px; coloor: red;'>".$donnee["nomComplet"]."  votre compte n'est pas encore activer !</p>";
                                     }
                                     elseif($donnee["profil"] == "Gerant" && $donnee["etat"] == '0')
                                     {
-                                        echo "<p style='font-size: 12px; coloor: red;'>".$donnee["nomComplet"]." votre compte n'est pas encore activer ! </p>";
+                                        echo "<p style='font-size: 12px; coloor: red;'>".$donnee["nomComplet"]."  votre compte a été désactiver ! </p>";
                                     }
                                     elseif($donnee["profil"] == "Gerant" && $donnee["etat"] == '1')
                                     {

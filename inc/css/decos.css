@@ -76,6 +76,32 @@ header nav ul li a {
     margin-left: 260px;
 }
 
+.util {
+    width: 110px;
+    display: none;
+    border: 3px solid white;
+    position: relative;
+    left: 87.5%;
+    top: 10%;
+}
+
+.util div {
+    margin-top: -38px;
+    margin-left: 75px;
+    color: white;
+}
+
+.util ul li a {
+    color: black;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+.util ul li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .parole {
     width: 420px;
     text-align: center;
