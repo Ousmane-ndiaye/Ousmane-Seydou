@@ -72,7 +72,7 @@ if(isset($_SESSION['typeUser']) && $_SESSION['typeUser']== 'Administrateur')
                     ?>
                     <table>
                         <tr>
-                            <th>Prénom et nom</th><th></th>
+                            <th>Prénom et nom</th><th>Adresse</th>
                         </tr>
                     </table>
                     <?php
