@@ -1,7 +1,13 @@
 $(function() {
-    $("#alertI, #alertC, #infoI").hide();
+    $("#alertI, #alertC").hide();
     $(".menu-icon").on("click", function() {
-        alert("apres tu comprendras");
+        if ($(".util").attr("class") == "util cacher") {
+            $(".util").addClass("afficher");
+            $(".util").removeClass("cacher");
+        } else if ($(".util").attr("class") == "util afficher") {
+            $(".util").addClass("cacher");
+            $(".util").removeClass("afficher");
+        }
     });
 
     $(window).on("scroll", function() {
@@ -11,19 +17,12 @@ $(function() {
             $("header nav").removeClass("black");
         }
     });
-    $(".openI").on("click", function() {
-        $(".popupI").fadeIn("slow");
+    $(".open").on("click", function() {
+        $(".popup").fadeIn("slow");
         return false;
     });
-    $(".closeI").on("click", function() {
-        $(".popupI").fadeOut("slow");
-    });
-    $(".openR").on("click", function() {
-        $(".popupR").fadeIn("slow");
-        return false;
-    });
-    $(".closeR").on("click", function() {
-        $(".popupR").fadeOut("slow");
+    $(".close").on("click", function() {
+        $(".popup").fadeOut("slow");
     });
 
     function champObl(champs) {
@@ -31,7 +30,7 @@ $(function() {
             return "Veuillez remplir le champ " + champs.attr('nomChamp');
         } else if (champs.attr('nomChamp') == "login" && !champs.val().match(/^[a-zA-Z0-9]+$/i)) {
             return "Veillez rentrer un login valide";
-        } else if (champs.attr('nomChamp') == "prenom et nom" && !champs.val().match(/^[a-z A-Z]+$/i)) {
+        } else if (champs.attr('nomChamp') == "prenom et nom" && !champs.val().match(/^[a-zA-Z]+{2,} [a-zA-Z]+{2,} [a-zA-Z]+{2,} [a-zA-Z]+$/i)) {
             return "Veillez remplir votre prenom et nom correctement";
         } else {
             return "";
@@ -60,10 +59,8 @@ $(function() {
                 });
                 if (controle == 4 && idform == "formInscript") {
                     valid = true;
-                    $('#infoI').show();
                 } else if (controle == 3 && idform == "formConnect") {
                     valid = true;
-                    ('#infoI').hide();
                 } else {
                     valid = false;
                 }

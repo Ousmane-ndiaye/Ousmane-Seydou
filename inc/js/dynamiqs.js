@@ -1,7 +1,13 @@
 $(function() {
     $("#alertI, #alertC").hide();
     $(".menu-icon").on("click", function() {
-        alert("apres tu comprendras");
+        if ($(".util").attr("class") == "cacher") {
+            $(".util").addClass("afficher");
+            $(".util").removeClass("cacher");
+        } else if ($(".util").attr("class") == "afficher") {
+            $(".util").addClass("cacher");
+            $(".util").removeClass("afficher");
+        }
     });
 
     $(window).on("scroll", function() {

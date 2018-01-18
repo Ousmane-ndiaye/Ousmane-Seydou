@@ -44,6 +44,22 @@ if(isset($session['typeUser']) && $session['typeUser']== 'Admin')
                             </ul>
                         </div>
                     </nav>
+                    <div class="util cacher">
+                        <div>
+                            <span><i class="fa fa-angle-up fa-3x" aria-hidden="true"></i></span>
+                        </div>
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="deconnexion.php">Parametre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="deconnexion.php">À propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="deconnexion.php">Déconnexion</a>
+                            </li>
+                        </ul>
+                    </div>
                 </header>
             </div>
             <!-- Optional JavaScript -->

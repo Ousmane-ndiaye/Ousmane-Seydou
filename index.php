@@ -88,29 +88,29 @@ session_start();
                                 $donnees = $util->logOn($loginC, $pswdC, $profilC);
                                 if($donnee = $donnees->fetch())
                                 {
-                                    $session['nomComplet'] = $donnee["nomComplet"];
-                                    $session['login'] = $donnee["login"];
+                                    $_SESSION['nomComplet'] = $donnee["nomComplet"];
+                                    $_SESSION['login'] = $donnee["login"];
                                     if($donnee["profil"] == "Administrateur")
                                     {
-                                        $seesion['typeUser'] = $donnee["profil"];
+                                        $_SESSION['typeUser'] = 'Administrateur';
                                         header("location: adminstr.php");
                                     }
                                     elseif($donnee["profil"] == "Gerant" && $donnee["etat"] == '-1')
                                     {
-                                        echo "<p style='font-size: 12px; coloor: red;'>".$donnee["nomComplet"]."  votre compte n'est pas encore activer !</p>";
+                                        echo "<p style='font-size: 12px; color: red;'>".$donnee["nomComplet"]."  votre compte n'est pas encore activer !</p>";
                                     }
                                     elseif($donnee["profil"] == "Gerant" && $donnee["etat"] == '0')
                                     {
-                                        echo "<p style='font-size: 12px; coloor: red;'>".$donnee["nomComplet"]."  votre compte a été désactiver ! </p>";
+                                        echo "<p style='font-size: 12px; color: red;'>".$donnee["nomComplet"]."  votre compte a été désactiver ! </p>";
                                     }
                                     elseif($donnee["profil"] == "Gerant" && $donnee["etat"] == '1')
                                     {
-                                        $seesion['typeUser'] = $donnee["profil"];
+                                        $_SESSION['typeUser'] = $donnee["profil"];
                                         header("location: gerant.php");
                                     }
                                     elseif($donnee["profil"] == "Admin")
                                     {
-                                        $seesion['typeUser'] = $donnee["profil"];
+                                        $_SESSION['typeUser'] = $donnee["profil"];
                                         header("location: admin.php");
                                     }
                                 }
@@ -160,7 +160,6 @@ session_start();
                             <option value="">Votre profil</option>
                             <option value="Admin">Admin</option>
                             <option value="Gerant">Gérant</option>
-                            <option value="Administrateur">Administrateur</option>
                         </select>
                         <input type="submit" name="enregistrerI" id="enregistrerI" value="S'inscrire">
                     </form>

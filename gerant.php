@@ -44,12 +44,28 @@ if(isset($session['typeUser']) && $session['typeUser']== 'Gerant')
                             </ul>
                         </div>
                     </nav>
+                    <div class="util cacher">
+                        <div>
+                            <span><i class="fa fa-angle-up fa-3x" aria-hidden="true"></i></span>
+                        </div>
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="deconnexion.php">Parametre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="deconnexion.php">À propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="deconnexion.php">Déconnexion</a>
+                            </li>
+                        </ul>
+                    </div>
                 </header>
             </div>
             <!-- Optional JavaScript -->
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="inc/js/dynamiqs.js"></script>
+            <script src="inc/js/dynamiq.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         </body>
